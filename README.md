@@ -10,6 +10,7 @@ Login:
 - Password: raspberry
 
 SSID: UAI-FAI-4AROB 2.4Ghz
+
 Password wifi: WiFiDiClasse
 
 IP: cambia sempre
