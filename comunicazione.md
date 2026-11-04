@@ -12,3 +12,13 @@ Non so neanche se vedrai questo file prima della prossima volta, anzi, è molto 
 
 Spero di rivederti presto a lezione.
 Samu
+
+### Venerdì 30 ottobre 2026
+
+In questa lezione ci è stato chiesto di trovare un modo per comandare il robot premendo WASD sul computer.
+
+Ho creato un socket TCP, ho messo `server_robot.py` sul robot, e ho fatto partire `client_pc.py` sul computer.
+
+Per far funzionare il programma è necessario installare la libreria `pynput`.
+
+L'Alphabot riconosce che i pulsanti vengono premuti, ma non ho ancora trovato un modo per fare in modo che il robot va avanti solo quando il pulsante è premuto.
