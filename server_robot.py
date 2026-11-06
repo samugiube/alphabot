@@ -2,7 +2,7 @@ import libreria
 import socket
 import time
 
-IP_PORTA = ("192.168.1.107", 4908) # IP del robot
+IP_PORTA = ("192.168.0.201", 4908) # IP del robot
 BUFFER_SIZE = 4096
 
 r = libreria.AlphaBot()
