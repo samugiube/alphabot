@@ -22,3 +22,18 @@ Ho creato un socket TCP, ho messo `server_robot.py` sul robot, e ho fatto partir
 Per far funzionare il programma è necessario installare la libreria `pynput`.
 
 L'Alphabot riconosce che i pulsanti vengono premuti, ma non ho ancora trovato un modo per fare in modo che il robot va avanti solo quando il pulsante è premuto.
+
+### Venerdì 6 Novembra
+
+Sono riuscito a far funzionare i pulsanti WASD.
+
+Ho corretto il file `libreria.py`, e ora le funzioni `forward` e `backward` funzionano correttamente.
+
+Ho aggiunto i comandi sui tasti L e K per aumentare o diminuire la velocità.
+
+Quando va avanti, il robot tende a curvare verso destra. Non ho ancora capito il perché.
+
+Ci hanno chiesto di fare qualcosa con i sensori di distanza, ma non ho ancora fatto nulla perché:
+- Non ho capito quali pin sono collegati ai sensori
+- Non ci è stato spiegato come utilizzare questi pin
+- Nella `libreria.py` non ho trovato nulla sui sensori

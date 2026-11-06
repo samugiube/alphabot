@@ -13,6 +13,8 @@ comandi = {
     "a": r.right,
     "d": r.left,
     "p": r.stop,
+    "l": r.increase_speed,
+    "k": r.decrease_speed,
     "exit": r.stop
 }
 

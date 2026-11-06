@@ -7,7 +7,7 @@ BUFFER_SIZE = 4096
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect(IP_PORTA)
 
-comandi = ["w", "a", "s", "d"]
+comandi = ["w", "a", "s", "d", "l", "k"]
 tasto_premuto = None
 
 def on_press(key):
