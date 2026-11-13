@@ -23,7 +23,7 @@ Per far funzionare il programma è necessario installare la libreria `pynput`.
 
 L'Alphabot riconosce che i pulsanti vengono premuti, ma non ho ancora trovato un modo per fare in modo che il robot va avanti solo quando il pulsante è premuto.
 
-### Venerdì 6 Novembra
+### Venerdì 6 Novembre
 
 Sono riuscito a far funzionare i pulsanti WASD.
 
@@ -37,3 +37,11 @@ Ci hanno chiesto di fare qualcosa con i sensori di distanza, ma non ho ancora fa
 - Non ho capito quali pin sono collegati ai sensori
 - Non ci è stato spiegato come utilizzare questi pin
 - Nella `libreria.py` non ho trovato nulla sui sensori
+
+### Venerdì 13 Novembre
+
+Ci hanno chiesto di creare un sistema di login prima di controllare il robot.
+
+Ho creato il database `alphabot.db`, che contiene la tabella **utenti**, in cui ho salvato un paio di coppie username-password per poter accedere. Ho creato anche i file `server_db.py` e `client_db.py`, per testare la chiamata SQL, ma non servono a niente per il programma vero e proprio.
+
+Ho modificato i file di client e server originali per inserire la parte del login. Non ho ancora fatto niente sui sensori.

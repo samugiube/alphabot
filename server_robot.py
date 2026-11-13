@@ -1,6 +1,6 @@
 import libreria
 import socket
-import time
+import sqlite3
 
 IP_PORTA = ("192.168.0.201", 4908) # IP del robot
 BUFFER_SIZE = 4096
@@ -26,6 +26,31 @@ def main():
 
     c, _ = s.accept()
     print("ROBOT ha una connessione!")
+
+    data = c.recv(BUFFER_SIZE)
+    msg = data.decode()
+    print(msg)
+
+    username, password = msg.split("$")
+    
+    conn = sqlite3.connect("./alphabot.db")
+    cur = conn.cursor()
+
+    cur.execute("""
+        SELECT *
+        FROM utenti
+        WHERE username = ?
+            AND password = ?
+    """, (username, password))
+    row = cur.fetchone()
+    print(row)
+
+    if not row:
+        c.send("Accesso negato".encode())
+        c.close()
+        exit()
+
+    c.send("Accesso effettuato correttamente".encode())
 
     while True:
         data = c.recv(BUFFER_SIZE)

@@ -43,6 +43,18 @@ def on_release(key):
 
 
 def main():
+    username = input("Inserire il nome utente -> ")
+    password = input("Inserire la password -> ")
+
+    s.send(f"{username}${password}".encode())
+    data = s.recv(BUFFER_SIZE)
+    msg = data.decode()
+    print(msg)
+
+    if msg == "Accesso negato":
+        s.close()
+        exit()
+
     with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
         listener.join()
     
